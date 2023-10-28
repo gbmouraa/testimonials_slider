@@ -3,10 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "pattern-bg": "url('/src/assets/pattern-bg.svg')",
-        "pattern-curve": "url('/src/assets/pattern-curve.svg')",
-        "pattern-quotes": "url('/src/assets/pattern-quotes.svg')",
+      boxShadow: {
+        pattern: "0px 17px 21px -7px rgba(114,114,192,0.4)",
       },
     },
   },

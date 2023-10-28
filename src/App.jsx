@@ -1,5 +1,7 @@
 import Testimonial from "./Testimonial";
 import tanyaPic from "./assets/image-tanya.jpg";
+import chevronLeft from "./assets/icon-prev.svg";
+import chevronRight from "./assets/icon-next.svg";
 // import johnPic from "./assets/image-john.jpg";
 
 function App() {
@@ -23,7 +25,16 @@ function App() {
   ];
 
   const Slider = () => {
-    return <div className="absolute bottom-0 h-5 w-5 bg-red-500"></div>;
+    return (
+      <div className="absolute -bottom-5 flex h-[38px] w-[80px] items-center  rounded-full bg-slate-50">
+        <button className="flex h-full w-1/2 items-center justify-center">
+          <img src={chevronLeft} alt="Icon prev" className="h-4" />
+        </button>
+        <button className="flex h-full w-1/2 items-center justify-center">
+          <img src={chevronRight} alt="Icon next" className="h-4" />
+        </button>
+      </div>
+    );
   };
 
   return (

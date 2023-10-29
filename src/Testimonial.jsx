@@ -29,7 +29,7 @@ const Testimonial = (props) => {
         />
 
         <figcaption className="text-center text-lg text-[#202046]">
-          <blockquote className="font-light ">{props.text}</blockquote>
+          <blockquote className="font-light">{props.text}</blockquote>
           <cite className="mt-5 flex flex-col font-bold not-italic">
             {props.name}
             <span className="font-medium text-[#babacf]">

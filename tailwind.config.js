@@ -16,7 +16,7 @@ module.exports = {
         },
       },
       animation: {
-        soft: "soft 1s ease-in-out",
+        soft: "soft 1.5s ease-in-out",
       },
     },
   },

@@ -2,7 +2,7 @@ import patternBg from "../src/assets/pattern-bg.svg";
 
 const Testimonial = (props) => {
   return (
-    <div className="p-5">
+    <div className="font-inter p-5">
       <div className="relative mb-5">
         <img
           src={patternBg}
@@ -13,16 +13,15 @@ const Testimonial = (props) => {
           <img
             src={props.pic}
             alt={props.name}
-            className="shadow-pattern block  w-[79%] rounded-lg"
+            className="block w-[79%]  rounded-lg shadow-pattern"
           />
           {props.slider}
         </figcaption>
       </div>
       <div>
         <figcaption>
-          <blockquote>{props.text}</blockquote>
+          <blockquote className="font-light ">{props.text}</blockquote>
           <cite>
-            {props.name}
             <span>{props.profession}</span>
           </cite>
         </figcaption>

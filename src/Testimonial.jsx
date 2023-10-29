@@ -3,7 +3,7 @@ import quote from "../src/assets/pattern-quotes.svg";
 
 const Testimonial = (props) => {
   return (
-    <div className="font-inter p-5">
+    <div className="font-inter animate-soft p-5">
       <div className="relative mb-[54px]">
         <img
           src={patternBg}

@@ -9,6 +9,15 @@ module.exports = {
       fontFamily: {
         inter: ["Inter"],
       },
+      keyframes: {
+        soft: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        soft: "soft 1s ease-in-out",
+      },
     },
   },
   plugins: [],

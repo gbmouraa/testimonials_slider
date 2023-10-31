@@ -3,7 +3,7 @@ import quote from "../src/assets/pattern-quotes.svg";
 
 const Testimonial = (props) => {
   return (
-    <div className="font-inter animate-soft m-auto max-w-[549px] p-5 lg:flex lg:max-w-full">
+    <div className="m-auto max-w-[549px] animate-soft p-5 font-inter lg:flex lg:max-w-full">
       <div className="relative mb-[54px] max-w-[550px] lg:order-2">
         <img
           src={patternBg}
@@ -21,18 +21,18 @@ const Testimonial = (props) => {
         </figcaption>
       </div>
 
-      <div className="relative">
-        <img
-          src={quote}
-          alt="Quote"
-          className="absolute -top-6 right-1/2 w-[60px] translate-x-1/2 "
-        />
+      <div className="z-10 flex items-center lg:translate-x-28">
+        <figcaption className="relative text-center text-2xl text-[#202046] lg:max-w-[480px] lg:text-left">
+          <img
+            src={quote}
+            alt="Quote"
+            className="absolute -top-6 right-1/2 w-[60px] translate-x-1/2 lg:left-8 "
+          />
 
-        <figcaption className="text-center text-2xl text-[#202046] lg:max-w-[500px]">
           <blockquote className="font-light">{props.text}</blockquote>
-          <cite className="mt-5 flex flex-col font-bold not-italic">
+          <cite className="mt-5 flex flex-col text-lg font-bold not-italic lg:flex-row">
             {props.name}
-            <span className="font-medium text-[#babacf]">
+            <span className="font-medium text-[#babacf] lg:ml-2">
               {props.profession}
             </span>
           </cite>

@@ -30,7 +30,7 @@ function App() {
 
   const Slider = () => {
     return (
-      <div className="absolute -bottom-5 flex h-[38px] w-[80px] items-center  rounded-full bg-slate-50 lg:left-[100px]">
+      <div className="shadow-area-btn absolute -bottom-5 z-50 flex h-[38px]  w-[80px] items-center rounded-full bg-slate-50  lg:left-[120px]">
         <button
           className="flex h-full w-1/2 items-center justify-center"
           onClick={() => setSlide(0)}
@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <div className="relative h-screen items-center overflow-hidden lg:flex lg:max-h-screen">
+    <div className="relative h-screen w-full items-center justify-center overflow-hidden lg:flex lg:max-h-screen">
       {!slide ? (
         <Testimonial
           key={data[0].name}
@@ -72,7 +72,7 @@ function App() {
       <img
         src={patternCurve}
         alt="Illustration"
-        className="absolute bottom-0 left-0  -z-10 w-full lg:translate-y-72"
+        className="absolute bottom-0 left-0 -z-10 w-full xl:w-[90%] xl:translate-y-40"
       />
     </div>
   );

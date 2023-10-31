@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       boxShadow: {
         pattern: "0px 17px 21px -7px rgba(114,114,192,0.4)",
+        "area-btn": "0px 11px 30px 3px rgba(114,114,192,0.3)",
       },
       fontFamily: {
         inter: ["Inter"],

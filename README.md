@@ -16,7 +16,7 @@ Os usuários devem ser capazes de:
 ### Links
 
 - **Reposítorio URL**: [https://github.com/gbmouraa/testimonials_slider](https://github.com/gbmouraa/testimonials_slider)
-- **Live Site URL**: [Add live site URL here](https://your-live-site-url.com)
+- **Live Site URL**: [https://gbmoura-testimonials-slider.netlify.app/](https://gbmoura-testimonials-slider.netlify.app/)
 
 ### Tecnologias Utilizadas :rocket:
 

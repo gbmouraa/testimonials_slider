@@ -68,7 +68,7 @@ function App() {
       <img
         src={patternCurve}
         alt="Illustration"
-        className="absolute bottom-0 left-0 -z-10 w-full xl:w-[90%] xl:translate-y-40"
+        className="absolute bottom-0 left-0 -z-10 w-full animate-soft xl:w-[90%] xl:translate-y-40"
       />
     </div>
   );

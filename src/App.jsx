@@ -22,7 +22,7 @@ function App() {
       name: "John Tarkpor",
       profession: "Junior Front-end Developer",
       pic: johnPic,
-      text: `“ “ If you want to lay the best foundation possible I’d recommend taking this course.
+      text: `“ If you want to lay the best foundation possible I’d recommend taking this course.
     The depth the instructors go into is incredible. I now feel so confident about
     starting up as a professional developer. ”`,
     },
@@ -30,7 +30,7 @@ function App() {
 
   const Slider = () => {
     return (
-      <div className="absolute -bottom-5 flex h-[38px] w-[80px] items-center  rounded-full bg-slate-50">
+      <div className="absolute -bottom-5 flex h-[38px] w-[80px] items-center  rounded-full bg-slate-50 lg:left-[100px]">
         <button
           className="flex h-full w-1/2 items-center justify-center"
           onClick={() => setSlide(0)}
@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen items-center overflow-hidden lg:flex lg:max-h-screen">
       {!slide ? (
         <Testimonial
           key={data[0].name}
@@ -72,7 +72,7 @@ function App() {
       <img
         src={patternCurve}
         alt="Illustration"
-        className="absolute bottom-0 -z-10 w-full"
+        className="absolute bottom-0 left-0  -z-10 w-full lg:translate-y-72"
       />
     </div>
   );

@@ -3,8 +3,8 @@ import quote from "../src/assets/pattern-quotes.svg";
 
 const Testimonial = (props) => {
   return (
-    <div className="font-inter animate-soft p-5">
-      <div className="relative mb-[54px]">
+    <div className="font-inter animate-soft m-auto max-w-[549px] p-5 lg:flex lg:max-w-full">
+      <div className="relative mb-[54px] max-w-[550px] lg:order-2">
         <img
           src={patternBg}
           alt="Background"
@@ -28,7 +28,7 @@ const Testimonial = (props) => {
           className="absolute -top-6 right-1/2 w-[60px] translate-x-1/2 "
         />
 
-        <figcaption className="text-center text-lg text-[#202046]">
+        <figcaption className="text-center text-2xl text-[#202046] lg:max-w-[500px]">
           <blockquote className="font-light">{props.text}</blockquote>
           <cite className="mt-5 flex flex-col font-bold not-italic">
             {props.name}

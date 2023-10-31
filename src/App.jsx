@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data";
 import Testimonial from "./Testimonial";
 import chevronLeft from "./assets/icon-prev.svg";
@@ -7,6 +7,22 @@ import patternCurve from "./assets/pattern-curve.svg";
 
 function App() {
   const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.key === "ArrowLeft") {
+        setSlide(0);
+      } else if (e.key === "ArrowRight") {
+        setSlide(1);
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   const Slider = () => {
     return (
